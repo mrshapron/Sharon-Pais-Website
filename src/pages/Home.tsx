@@ -55,7 +55,7 @@ const Home = () => {
               </Button>
             </Link>
 
-            <a href={`${import.meta.env.BASE_URL}sharon-pais-cv.pdf`} download>
+            <a href={`${import.meta.env.BASE_URL}/uploads/sharon-pais-cv.pdf`} download>
               <Button
                 variant="outline"
                 className="
