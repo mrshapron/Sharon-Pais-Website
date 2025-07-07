@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Download, Github, Mail } from 'lucide-react';
@@ -11,28 +10,28 @@ const Home = () => {
         {/* Profile Image */}
         <div className="mb-8 animate-fade-in">
           <img
-            src="/lovable-uploads/9adf4add-1d4e-4393-ae3d-e98bf0226510.png"
+            src={`${import.meta.env.BASE_URL}lovable-uploads/9adf4add-1d4e-4393-ae3d-e98bf0226510.png`}
             alt="Sharon Pais"
             className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-blue-400/20 shadow-2xl hover:border-blue-400/40 transition-all duration-300"
           />
         </div>
-        
+
         {/* Hero Content */}
         <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
             Sharon <span className="text-blue-400">Pais</span>
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-slate-300 mb-6">
             Backend/Full-Stack Software Engineer
           </p>
-          
+
           <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-8 leading-relaxed">
             Software Engineer with <span className="text-blue-400 font-semibold">4+ years of experience</span> specializing in scalable 
             solutions, microservices architecture, and LLM model integration. Currently pursuing my 
             <span className="text-blue-400 font-semibold"> BSc in Computer Science</span> while contributing to innovative software development.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to="/experience">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg rounded-lg transition-all duration-200 hover:scale-105 flex items-center space-x-2">
@@ -40,7 +39,7 @@ const Home = () => {
                 <ArrowRight size={20} />
               </Button>
             </Link>
-            
+
             <Button
               variant="outline"
               className="border-slate-600 text-slate-300 hover:bg-slate-700 hover:text-white px-8 py-3 text-lg rounded-lg transition-all duration-200 hover:scale-105 flex items-center space-x-2"
@@ -49,7 +48,7 @@ const Home = () => {
               <span>Download Resume</span>
             </Button>
           </div>
-          
+
           <div className="flex justify-center space-x-6 mt-8">
             <a
               href="https://github.com/mrshapron"
