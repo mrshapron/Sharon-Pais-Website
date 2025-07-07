@@ -187,7 +187,7 @@ Error generating stack: `+i.message+`
                   flex items-center space-x-2
                 `,children:[p.jsx("span",{children:"View My Work"}),p.jsx(Yy,{size:20})]})}),p.jsx(_t,{variant:"outline",asChild:!0,className:`
     border-blue-500 text-blue-600
-    hover:bg-blue-700 hover:text-white
+   hover:text-blue
     px-8 py-3 text-lg rounded-lg
     transition-all duration-200 hover:scale-105
     flex items-center space-x-2
