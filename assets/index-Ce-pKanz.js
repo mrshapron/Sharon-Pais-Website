@@ -185,7 +185,7 @@ Error generating stack: `+i.message+`
                   px-8 py-3 text-lg rounded-lg
                   transition-all duration-200 hover:scale-105
                   flex items-center space-x-2
-                `,children:[p.jsx("span",{children:"View My Work"}),p.jsx(Yy,{size:20})]})}),p.jsx("a",{href:"/Sharon-Pais-Website/sharon-pais-cv.pdf",download:!0,children:p.jsxs(_t,{variant:"outline",className:`
+                `,children:[p.jsx("span",{children:"View My Work"}),p.jsx(Yy,{size:20})]})}),p.jsx("a",{href:"/Sharon-Pais-Website//uploads/sharon-pais-cv.pdf",download:!0,children:p.jsxs(_t,{variant:"outline",className:`
                     border-slate-600 text-slate-300
                     hover:bg-slate-700 hover:text-white
                     px-8 py-3 text-lg rounded-lg
