@@ -1,73 +1,92 @@
-# Welcome to your Lovable project
+# 💼 Sharon Pais - Personal CV Website
 
-## Project info
+This is a personal portfolio/CV website built using **React**, **Vite**, and **shadcn/ui**.  
+It showcases my skills, experience, and projects as a Backend/Full-Stack Software Engineer.
 
-**URL**: https://lovable.dev/projects/00cc7920-9f34-41dd-88f4-ca832e134b45
+The site is deployed using **GitHub Pages** and can be viewed here:  
+👉 [https://mrshapron.github.io/Sharon-Pais-Website/](https://mrshapron.github.io/Sharon-Pais-Website/)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+- Responsive and modern UI
+- Built with React + TypeScript + Vite
+- UI components powered by [shadcn/ui](https://ui.shadcn.com/)
+- Smooth navigation using `HashRouter` (for GitHub Pages compatibility)
+- Deployment with `gh-pages` package
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/00cc7920-9f34-41dd-88f4-ca832e134b45) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📦 Tech Stack
 
-**Use your preferred IDE**
+- **Frontend:** React, TypeScript, Vite
+- **UI Library:** shadcn/ui
+- **Icons:** Lucide React
+- **Routing:** React Router (HashRouter)
+- **Deployment:** GitHub Pages
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📂 Project Structure
 
-Follow these steps:
+<pre>
+├── public/
+│   └── lovable-uploads/        # Public assets (e.g. profile picture)
+├── src/
+│   ├── components/             # Reusable UI components
+│   ├── hooks/                  # Custom hooks
+│   ├── lib/                    # Utility functions / helpers
+│   ├── pages/                  # Page-level components (e.g. Home, Experience)
+│   ├── App.tsx                 # Main app entry with routing
+│   └── main.tsx                # Root render function
+├── vite.config.ts              # Vite config with aliases
+└── package.json
+</pre>
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🧑‍💻 Setup & Development
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+# Clone the repository
+git clone https://github.com/mrshapron/Sharon-Pais-Website.git
+cd Sharon-Pais-Website
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Install dependencies
+npm install
+
+# Start the dev server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🚢 Deployment
 
-**Use GitHub Codespaces**
+To deploy the site to GitHub Pages:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+# Build the project
+npm run build
 
-## What technologies are used for this project?
+# Deploy to GitHub Pages
+npm run deploy
+```
 
-This project is built with:
+Make sure the `homepage` field in `package.json` is set to:
+```json
+"homepage": "https://mrshapron.github.io/Sharon-Pais-Website/"
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 📬 Contact
 
-Simply open [Lovable](https://lovable.dev/projects/00cc7920-9f34-41dd-88f4-ca832e134b45) and click on Share -> Publish.
+Feel free to connect with me:
 
-## Can I connect a custom domain to my Lovable project?
+- GitHub: [@mrshapron](https://github.com/mrshapron)
+- LinkedIn: [linkedin.com/in/sharon-pais](https://linkedin.com/in/sharon-pais)
+- Email: mrsharpais@gmail.com
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
