@@ -101,7 +101,7 @@ const Contact = () => {
                     className="w-full bg-blue-600 hover:bg-blue-700 text-white justify-start"
                     asChild
                   >
-                    <a href="/lovable-uploads/32b241db-e939-4350-a340-56de3a8f25e4.png" download="Sharon_Pais_Resume.pdf">
+                    <a href="/uploads/32b241db-e939-4350-a340-56de3a8f25e4.png" download="Sharon_Pais_Resume.pdf">
                       <Download className="mr-2" size={18} />
                       Download Resume
                     </a>
