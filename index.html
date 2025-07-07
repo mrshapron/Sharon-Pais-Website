@@ -3,19 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Sharon Pais CV</title>
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/uploads/icon.png" />
+    <link rel="apple-touch-icon" href="/uploads/icon.png" />
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Meta Tags -->
     <meta name="description" content="Sharon Pais CV" />
     <meta name="author" content="Lovable" />
 
+    <!-- Open Graph -->
     <meta property="og:title" content="Sharon Pais CV" />
-
     <meta property="og:type" content="website" />
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- iOS Fullscreen Web App Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Sharon Pais CV" />
+
+    <!-- Theme for iOS, Android, Chrome, etc. -->
+    <meta name="theme-color" content="#0f172a" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-20R99D2FXR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-20R99D2FXR");
+    </script>
   </head>
 
-  <body>
+  <body class="bg-[#0f172a] text-white min-h-screen">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
