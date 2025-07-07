@@ -24,9 +24,6 @@ const About = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             About <span className="text-blue-400">Me</span>
           </h1>
-          <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-            Passionate about creating scalable solutions and innovative software architecture
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">

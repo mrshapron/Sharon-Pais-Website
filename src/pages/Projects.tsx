@@ -69,9 +69,6 @@ const Projects = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Featured <span className="text-blue-400">Projects</span>
           </h1>
-          <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-            A showcase of my technical expertise across different domains and technologies
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -151,9 +148,6 @@ const Projects = () => {
         </div>
 
         <div className="text-center mt-12 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-          <p className="text-slate-400 mb-6">
-            Interested in seeing more of my work or discussing potential collaborations?
-          </p>
           <Button
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg rounded-lg transition-all duration-200 hover:scale-105"
             asChild

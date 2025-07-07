@@ -1,7 +1,6 @@
-
-import React from 'react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Calendar, MapPin, ExternalLink } from 'lucide-react';
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Calendar, MapPin, ExternalLink } from "lucide-react";
 
 interface ExperienceItem {
   company: string;
@@ -10,55 +9,74 @@ interface ExperienceItem {
   location?: string;
   achievements: string[];
   technologies?: string[];
+  url?: string; // <-- NEW
 }
 
 const Experience = () => {
   const experiences: ExperienceItem[] = [
     {
       company: "Infotale",
+      url: "https://infotale.com", // <-- NEW
       position: "Full Stack Software Engineer",
       duration: "2024/01 – present",
       achievements: [
         "Designed and developed full-stack applications with React.js, Node.js, MongoDB, and PostgreSQL in a Docker-based environment",
-        "Designed and implemented scalable microservices on Azure, optimizing RabbitMQ consumption for high-performance processing",
-        "Implemented authentication, authorization, and Single Sign-On (SSO) to enhance security across services"
+        "Designed and implemented scalable microservices on Azure, optimising RabbitMQ consumption for high-performance processing",
+        "Implemented authentication, authorisation, and Single Sign-On (SSO) to enhance security across services",
       ],
-      technologies: ["React.js", "Node.js", "MongoDB", "PostgreSQL", "Docker", "Azure", "RabbitMQ", "SSO"]
+      technologies: [
+        "React.js",
+        "Node.js",
+        "MongoDB",
+        "PostgreSQL",
+        "Docker",
+        "Azure",
+        "RabbitMQ",
+        "SSO",
+      ],
     },
     {
       company: "Pango Parking Ltd.",
-      position: "Backend Software developer - Full Time",
+      url: "https://pango.co.il", // <-- NEW
+      position: "Backend Software Developer",
       duration: "2020/02 – 2021/09",
       achievements: [
-        "Developed and optimized backend services for Pango Fast Parking, ensuring high availability and performance",
+        "Developed and optimised backend services for Pango Fast Parking, ensuring high availability and performance",
         "Designed and deployed scalable AWS-based microservices using .NET Core, balancing high-rate event handling and user scalability",
-        "Optimized database performance and access using Entity Framework, improving query efficiency",
-        "Implemented TDD-based microservices architecture, utilizing Dependency Injection",
-        "Enhanced system monitoring and troubleshooting through Kibana log analysis queries"
+        "Optimised database performance and access using Entity Framework, improving query efficiency",
+        "Implemented TDD-based microservices architecture with Dependency Injection",
+        "Enhanced system monitoring and troubleshooting through Kibana log-analysis queries",
       ],
-      technologies: ["AWS", ".NET Core", "Entity Framework", "TDD", "Dependency Injection", "Kibana"]
+      technologies: [
+        "AWS",
+        ".NET Core",
+        "Entity Framework",
+        "TDD",
+        "Dependency Injection",
+        "Kibana",
+      ],
     },
     {
-      company: "Israeli Air Force - Flight Test Center (Manat)",
+      company: "Israeli Air Force – Flight Test Center (Manat)",
       position: "Software Developer",
       duration: "2017/06 – 2020/02",
       achievements: [
-        "Developed software solutions to transform raw flight data into structured, analyzable formats, including Excel reports and MATLAB visualizations",
-        "Engineered user applications using .NET technologies (C#, WPF, WinForms, WebForms), optimizing performance and usability",
-        "Designed and implemented large-scale SQL-based data systems for efficient flight data management and analysis"
+        "Transformed raw flight data into structured, analysable formats (Excel reports, MATLAB visualisations)",
+        "Built user applications with .NET tech (C#, WPF, WinForms, WebForms), optimising performance and usability",
+        "Designed and implemented large-scale SQL-based data systems for efficient flight-data management",
       ],
-      technologies: ["C#", "WPF", "WinForms", "WebForms", ".NET", "SQL", "MATLAB", "Excel"]
-    }
+      technologies: ["C#", "WPF", "WinForms", "WebForms", ".NET", "SQL", "MATLAB", "Excel"],
+    },
   ];
 
   const education = {
-    title: "Educational Experience and Contributions",
-    position: "High School Teacher, Private Tutor",
+    title: "Educational Experience & Contributions",
+    position: "High-School Teacher & Private Tutor",
     achievements: [
-      "Tutored high school students (4-5 units) in computer science, physics, and mathematics",
-      "Taught Python to junior high students for over a year",
-      "Mentored 12th graders in computer science projects, improving their problem-solving and programming skills"
-    ]
+      "Tutored high-school students (4–5 units) in computer science, physics, and mathematics",
+      "Taught Python to junior-high students for over a year",
+      "Mentored 12th-grade students in computer-science projects, improving their problem-solving and programming skills",
+    ],
   };
 
   return (
@@ -74,21 +92,39 @@ const Experience = () => {
         </div>
 
         <div className="space-y-8">
-          {experiences.map((exp, index) => (
+          {experiences.map((exp, idx) => (
             <Card
-              key={index}
+              key={idx}
               className="bg-slate-800/50 border-slate-700 hover:border-slate-600 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              style={{ animationDelay: `${idx * 0.1}s` }}
             >
               <CardContent className="p-6">
+                {/* Header */}
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  {/* Position + Company */}
                   <div>
                     <h3 className="text-xl font-bold text-white mb-1">{exp.position}</h3>
                     <div className="flex items-center space-x-2 text-blue-400 font-semibold mb-2">
-                      <span>{exp.company}</span>
-                      <ExternalLink size={16} />
+                      {exp.url ? (
+                        <a
+                          href={exp.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 hover:underline"
+                        >
+                          <span>{exp.company}</span>
+                          <ExternalLink size={16} />
+                        </a>
+                      ) : (
+                        <>
+                          <span>{exp.company}</span>
+                          
+                        </>
+                      )}
                     </div>
                   </div>
+
+                  {/* Duration & Location */}
                   <div className="flex flex-col md:items-end text-slate-400">
                     <div className="flex items-center space-x-2 mb-1">
                       <Calendar size={16} />
@@ -103,15 +139,17 @@ const Experience = () => {
                   </div>
                 </div>
 
+                {/* Achievements */}
                 <ul className="space-y-2 mb-4">
-                  {exp.achievements.map((achievement, i) => (
+                  {exp.achievements.map((ach, i) => (
                     <li key={i} className="text-slate-300 flex items-start">
                       <span className="text-blue-400 mr-2 mt-1">•</span>
-                      <span>{achievement}</span>
+                      <span>{ach}</span>
                     </li>
                   ))}
                 </ul>
 
+                {/* Tech badges */}
                 {exp.technologies && (
                   <div className="flex flex-wrap gap-2">
                     {exp.technologies.map((tech, i) => (
@@ -129,16 +167,19 @@ const Experience = () => {
           ))}
 
           {/* Education Section */}
-          <Card className="bg-slate-800/50 border-slate-700 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <Card
+            className="bg-slate-800/50 border-slate-700 animate-fade-in"
+            style={{ animationDelay: "0.4s" }}
+          >
             <CardContent className="p-6">
               <h3 className="text-xl font-bold text-white mb-2">{education.title}</h3>
               <p className="text-blue-400 font-semibold mb-4">{education.position}</p>
-              
+
               <ul className="space-y-2">
-                {education.achievements.map((achievement, i) => (
+                {education.achievements.map((ach, i) => (
                   <li key={i} className="text-slate-300 flex items-start">
                     <span className="text-blue-400 mr-2 mt-1">•</span>
-                    <span>{achievement}</span>
+                    <span>{ach}</span>
                   </li>
                 ))}
               </ul>
