@@ -185,13 +185,13 @@ Error generating stack: `+i.message+`
                   px-8 py-3 text-lg rounded-lg
                   transition-all duration-200 hover:scale-105
                   flex items-center space-x-2
-                `,children:[p.jsx("span",{children:"View My Work"}),p.jsx(Yy,{size:20})]})}),p.jsx("a",{href:"/Sharon-Pais-Website//uploads/sharon-pais-cv.pdf",download:!0,children:p.jsxs(_t,{variant:"outline",className:`
-                    border-slate-600 text-slate-300
-                    hover:bg-slate-700 hover:text-white
-                    px-8 py-3 text-lg rounded-lg
-                    transition-all duration-200 hover:scale-105
-                    flex items-center space-x-2
-                  `,children:[p.jsx(hm,{size:20}),p.jsx("span",{children:"Download Resume"})]})})]}),p.jsxs("div",{className:"flex justify-center space-x-6 mt-8",children:[p.jsx("a",{href:"https://github.com/mrshapron",target:"_blank",rel:"noopener noreferrer",className:`
+                `,children:[p.jsx("span",{children:"View My Work"}),p.jsx(Yy,{size:20})]})}),p.jsx(_t,{variant:"outline",asChild:!0,className:`
+    border-blue-500 text-blue-600
+    hover:bg-blue-700 hover:text-white
+    px-8 py-3 text-lg rounded-lg
+    transition-all duration-200 hover:scale-105
+    flex items-center space-x-2
+  `,children:p.jsxs("a",{href:"/uploads/sharon-pais-cv.pdf",download:!0,children:[p.jsx(hm,{size:20}),p.jsx("span",{children:"Download Resume"})]})})]}),p.jsxs("div",{className:"flex justify-center space-x-6 mt-8",children:[p.jsx("a",{href:"https://github.com/mrshapron",target:"_blank",rel:"noopener noreferrer",className:`
                 text-slate-400 hover:text-blue-400
                 transition-colors duration-200
                 hover:scale-110 transform
