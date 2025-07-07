@@ -60,7 +60,7 @@ const Home = () => {
               asChild
               className="
     border-blue-500 text-blue-600
-    hover:bg-blue-700 hover:text-white
+   hover:text-blue
     px-8 py-3 text-lg rounded-lg
     transition-all duration-200 hover:scale-105
     flex items-center space-x-2
