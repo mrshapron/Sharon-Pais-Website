@@ -1,7 +1,6 @@
 # 💼 Sharon Pais - Personal CV Website
 
 This is a personal portfolio/CV website built using **React**, **Vite**, and **shadcn/ui**.  
-It showcases my skills, experience, and projects as a Backend/Full-Stack Software Engineer.
 
 The site is deployed using **GitHub Pages** and can be viewed here:  
 👉 [https://mrshapron.github.io/Sharon-Pais-Website/](https://mrshapron.github.io/Sharon-Pais-Website/)
@@ -26,25 +25,6 @@ The site is deployed using **GitHub Pages** and can be viewed here:
 - **Routing:** React Router (HashRouter)
 - **Deployment:** GitHub Pages
 
----
-
-## 📂 Project Structure
-
-<pre>
-├── public/
-│   └── lovable-uploads/        # Public assets (e.g. profile picture)
-├── src/
-│   ├── components/             # Reusable UI components
-│   ├── hooks/                  # Custom hooks
-│   ├── lib/                    # Utility functions / helpers
-│   ├── pages/                  # Page-level components (e.g. Home, Experience)
-│   ├── App.tsx                 # Main app entry with routing
-│   └── main.tsx                # Root render function
-├── vite.config.ts              # Vite config with aliases
-└── package.json
-</pre>
-
----
 
 ## 🧑‍💻 Setup & Development
 
