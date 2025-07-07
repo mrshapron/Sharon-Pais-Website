@@ -55,21 +55,22 @@ const Home = () => {
               </Button>
             </Link>
 
-            <a href={`${import.meta.env.BASE_URL}/uploads/sharon-pais-cv.pdf`} download>
-              <Button
-                variant="outline"
-                className="
-                    border-slate-600 text-slate-300
-                    hover:bg-slate-700 hover:text-white
-                    px-8 py-3 text-lg rounded-lg
-                    transition-all duration-200 hover:scale-105
-                    flex items-center space-x-2
-                  "
-              >
+            <Button
+              variant="outline"
+              asChild
+              className="
+    border-blue-500 text-blue-600
+    hover:bg-blue-700 hover:text-white
+    px-8 py-3 text-lg rounded-lg
+    transition-all duration-200 hover:scale-105
+    flex items-center space-x-2
+  "
+            >
+              <a href="/uploads/sharon-pais-cv.pdf" download>
                 <Download size={20} />
                 <span>Download Resume</span>
-              </Button>
-            </a>
+              </a>
+            </Button>
           </div>
 
           <div className="flex justify-center space-x-6 mt-8">
