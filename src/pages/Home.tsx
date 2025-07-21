@@ -14,6 +14,7 @@ const Home = () => {
             alt="Sharon Pais"
             className="
               w-48 h-48 rounded-full mx-auto object-cover
+              object-top
               border-4 border-blue-400/20 shadow-2xl
               hover:border-blue-400/40
               transition-all duration-300
