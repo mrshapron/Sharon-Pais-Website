@@ -48,7 +48,7 @@ const About = () => {
                 
                 <div className="flex items-center space-x-3">
                   <GraduationCap className="text-blue-400" size={20} />
-                  <span className="text-slate-300">BSc Computer Science (In Progress)</span>
+                  <span className="text-slate-300">BSc Computer Science</span>
                 </div>
               </div>
               
